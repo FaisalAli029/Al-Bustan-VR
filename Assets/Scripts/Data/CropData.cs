@@ -9,5 +9,5 @@ public class CropData : ScriptableObject
     public float growthScale;
     public float growthTime;
     public int yield;
-    public int seelPrice;
+    public int sellPrice;
 }
