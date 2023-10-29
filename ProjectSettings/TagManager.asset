@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Rake
+  - Seeds
+  - WateringCan
   layers:
   - Default
   - TransparentFX
