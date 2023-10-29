@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class PlantingFunction : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private static void OnTriggerEnter(Collider other)
     {
-        
-    }
+        CropSeedData CropToGrow = other.gameObject.GetComponent<CropSeedData>();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+
     }
 }
