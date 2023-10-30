@@ -15,7 +15,9 @@ public class PlottingFunction : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("hit");
+        // Debug.Log("hit"); // to test if collision is detected
+
+        // TODO: implement a way to decrease the hit counter passed on the upgrade counter on the rake
 
         if (collision.gameObject.CompareTag("Rake"))
         {
@@ -23,6 +25,7 @@ public class PlottingFunction : MonoBehaviour
 
             AudioSource.PlayClipAtPoint(Plotting, this.gameObject.transform.position);
 
+            // when the counter hits 3, instantiate the ploted land then destroy the unploted land
             if (hitCount >= 3)
             {
                 AudioSource.PlayClipAtPoint(PlottingDone, this.gameObject.transform.position);

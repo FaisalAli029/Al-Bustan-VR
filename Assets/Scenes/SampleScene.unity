@@ -123,37 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &45799603
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 45799604}
-  m_Layer: 0
-  m_Name: PlantSpawn (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &45799604
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 45799603}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2068913747}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &217951100
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -162,11 +131,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 693717613964141329, guid: 5e2d258809a64af489a4253fd680f278,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3941060956543217786, guid: 5e2d258809a64af489a4253fd680f278,
         type: 3}
       propertyPath: m_Convex
@@ -254,32 +218,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 8682659794135326836, guid: 5e2d258809a64af489a4253fd680f278,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1056250576}
-    - targetCorrespondingSourceObject: {fileID: 8682659794135326836, guid: 5e2d258809a64af489a4253fd680f278,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1302671016}
-    - targetCorrespondingSourceObject: {fileID: 8682659794135326836, guid: 5e2d258809a64af489a4253fd680f278,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1113013036}
-    - targetCorrespondingSourceObject: {fileID: 8682659794135326836, guid: 5e2d258809a64af489a4253fd680f278,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 45799604}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5169040268619702837, guid: 5e2d258809a64af489a4253fd680f278,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2068913748}
-    - targetCorrespondingSourceObject: {fileID: 693717613964141329, guid: 5e2d258809a64af489a4253fd680f278,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1792942820}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e2d258809a64af489a4253fd680f278, type: 3}
 --- !u!1 &260240327
 GameObject:
@@ -429,12 +369,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 063f60331e5e1f4459970d6217314a64, type: 3}
---- !u!1 &572573044 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5169040268619702837, guid: 5e2d258809a64af489a4253fd680f278,
-    type: 3}
-  m_PrefabInstance: {fileID: 217951100}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &593967703
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,99 +736,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
---- !u!1 &1056250575
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1056250576}
-  m_Layer: 0
-  m_Name: PlantSpawn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1056250576
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1056250575}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2068913747}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1113013035
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1113013036}
-  m_Layer: 0
-  m_Name: PlantSpawn (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1113013036
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1113013035}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 0, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2068913747}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1302671015
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1302671016}
-  m_Layer: 0
-  m_Name: PlantSpawn (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1302671016
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1302671015}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 0, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2068913747}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1511702197 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5622740356849034185, guid: edd9154d0dc011d49bb87027865b31ac,
@@ -1254,29 +1095,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1610835972}
   m_SourcePrefab: {fileID: 100100000, guid: 482ac63b431522c48805e6334e02d18d, type: 3}
---- !u!1 &1792942818 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 693717613964141329, guid: 5e2d258809a64af489a4253fd680f278,
-    type: 3}
-  m_PrefabInstance: {fileID: 217951100}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1792942820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1792942818}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25e159b10255eea4bac91481690d2ff0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoints:
-  - {fileID: 1056250575}
-  - {fileID: 1302671015}
-  - {fileID: 1113013035}
-  - {fileID: 45799603}
 --- !u!1001 &1939135290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1474,25 +1292,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!4 &2068913747 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8682659794135326836, guid: 5e2d258809a64af489a4253fd680f278,
-    type: 3}
-  m_PrefabInstance: {fileID: 217951100}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2068913748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 572573044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2220eaae9ba5a08489c9a72cfb3eec5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _WateredPlot: {fileID: 2100000, guid: 81278bff6a86cb34f8a84eb907f93aab, type: 2}
 --- !u!1 &2113274744
 GameObject:
   m_ObjectHideFlags: 0
