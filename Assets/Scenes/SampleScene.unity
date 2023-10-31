@@ -1496,7 +1496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeMultiplier: 144
-  startHour: 7
+  startHour: 6
   sunLight: {fileID: 705507994}
   sunriseHour: 7
   sunsetHour: 20.5

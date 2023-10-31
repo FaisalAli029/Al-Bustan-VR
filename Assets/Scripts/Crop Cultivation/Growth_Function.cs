@@ -12,18 +12,22 @@ public class Growth_Function : MonoBehaviour
 
     private int growthCounter = 0;
 
+    private Watering_Function wateringFunction;
+
     public static event Action CropGrowEvent;
 
     private void Awake()
     {
         cropData = GetComponent<CropCarrior>().crop;
 
+        wateringFunction = GetComponentInParent<Watering_Function>();
+
         Debug.Log("awaken");
     }
 
     private void OnEnable()
     {
-        Watering_Function.OnWateredEvent += OnWatered;
+        wateringFunction.OnWateredEvent += OnWatered;
         TimeManager.OnSunrise += OnSunrise;
 
         Debug.Log("awaken");
@@ -31,14 +35,13 @@ public class Growth_Function : MonoBehaviour
 
     private void OnDisable()
     {
-        Watering_Function.OnWateredEvent -= OnWatered;
+        wateringFunction.OnWateredEvent -= OnWatered;
         TimeManager.OnSunrise -= OnSunrise;
     }
 
     private void OnWatered()
     {
         isWatered = true;
-        CheckGrowth();
 
         Debug.Log("watered");
     }

@@ -5,7 +5,7 @@ using System;
 
 public class Watering_Function : MonoBehaviour
 {
-    public static event Action OnWateredEvent;
+    public event Action OnWateredEvent;
 
     [SerializeField]
     private Material _WateredPlot;

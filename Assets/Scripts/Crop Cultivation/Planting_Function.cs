@@ -22,7 +22,7 @@ public class PlantingFunction : MonoBehaviour
                 foreach (GameObject spawn in spawnPoints)
                 {
                     // spawn the crops on each spawn point inside the parent of this game object
-                    GameObject crop = Instantiate(carrior.cropSeedData.cropToPlant, spawn.transform.position, spawn.transform.rotation, transform.parent.transform);
+                    GameObject crop = Instantiate(carrior.cropSeedData.cropToPlant, spawn.transform.position, spawn.transform.rotation, transform);
 
                     crop.transform.localScale = carrior.cropSeedData.initCropScale;
                 }
