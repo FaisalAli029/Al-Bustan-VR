@@ -15,6 +15,6 @@ MonoBehaviour:
   seedName: Cabbage
   price: 5
   initCropScale: {x: 0.5, y: 0.5, z: 0.5}
-  cropToPlant: {fileID: 8554979865545778643, guid: f0e763d1915fcc942b5f6fab689fa2dd,
+  cropToPlant: {fileID: 1870122127100915571, guid: 5983a2ce4b9714f4ab9741c2552320dc,
     type: 3}
   Seed: {fileID: 5157066508882383922, guid: 745a874a9ac68d7429e7da9bba99e0bf, type: 3}

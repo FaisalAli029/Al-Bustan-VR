@@ -44,6 +44,10 @@ public class TimeManager : MonoBehaviour
 
     private TimeSpan sunsetTime;
 
+    private bool sunriseEventInvoked = false;
+
+    public static event Action OnSunrise;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +55,9 @@ public class TimeManager : MonoBehaviour
 
         sunriseTime = TimeSpan.FromHours(sunriseHour);
         sunsetTime = TimeSpan.FromHours(sunsetHour);
+
+        Debug.Log(sunriseTime);
+        Debug.Log(currentTime.TimeOfDay);
     }
 
     // Update is called once per frame
@@ -64,6 +71,16 @@ public class TimeManager : MonoBehaviour
     private void UpdateTimeOfDay()
     {
         currentTime = currentTime.AddSeconds(Time.deltaTime * timeMultiplier);
+
+        if (currentTime.TimeOfDay >= sunriseTime && !sunriseEventInvoked)
+        {
+            OnSunrise?.Invoke();
+            sunriseEventInvoked = true;
+        }
+        else if (currentTime.TimeOfDay < sunriseTime)
+        {
+            sunriseEventInvoked = false;
+        }
     }
 
     private void RotateSun()

@@ -6,8 +6,8 @@ using UnityEngine;
 public class CropData : ScriptableObject
 {
     public string cropName;
-    public float growthScale;
-    public float growthTime;
+    public Vector3 growthScale;
+    public int growthTime;
     public int yield;
     public int sellPrice;
 }
