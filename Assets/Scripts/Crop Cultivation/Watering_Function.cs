@@ -19,12 +19,12 @@ public class Watering_Function : MonoBehaviour
 
     private void OnEnable()
     {
-        Growth_Function.CropGrowEvent += ResetMaterial;
+        Growth_Function.ResetPlotEvent += ResetMaterial;
     }
 
     private void OnDisable()
     {
-        Growth_Function.CropGrowEvent -= ResetMaterial;
+        Growth_Function.ResetPlotEvent -= ResetMaterial;
     }
 
     private void OnTriggerEnter(Collider other)

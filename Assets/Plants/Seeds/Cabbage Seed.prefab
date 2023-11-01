@@ -67,12 +67,13 @@ GameObject:
   - component: {fileID: 7741670424409739498}
   - component: {fileID: 1506730492084003789}
   - component: {fileID: 6669950636054259707}
-  - component: {fileID: 7496039522852825660}
   - component: {fileID: 3046674385476371706}
   - component: {fileID: 9082950982231668156}
+  - component: {fileID: 8189395260968449259}
+  - component: {fileID: 8068492878993721695}
   m_Layer: 0
   m_Name: Cabbage Seed
-  m_TagString: Untagged
+  m_TagString: Seeds
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,28 +146,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7496039522852825660
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5157066508882383922}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 159e40a4b9219cc41874901e8ab04c9e, type: 3}
 --- !u!54 &3046674385476371706
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -193,7 +172,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &9082950982231668156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,6 +244,42 @@ MonoBehaviour:
   UseCustomInspector: 1
   lastFlickTime: 0
   FlickForce: 1
+--- !u!114 &8189395260968449259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5157066508882383922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f692e70712971224597804995c5ebb91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cropSeedData: {fileID: 11400000, guid: 190d0aad9a9b55045bf2e52198973ce1, type: 2}
+--- !u!136 &8068492878993721695
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5157066508882383922}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.24468318
+  m_Height: 0.77
+  m_Direction: 1
+  m_Center: {x: 0.002486825, y: 0.35205615, z: 0.0015536249}
 --- !u!1 &5636277317690496475
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,6 +344,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7741670424409739498}
     m_Modifications:
+    - target: {fileID: 4054054059157737455, guid: f0e763d1915fcc942b5f6fab689fa2dd,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5478211527511029621, guid: f0e763d1915fcc942b5f6fab689fa2dd,
         type: 3}
       propertyPath: m_FadeMode

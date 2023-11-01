@@ -67,8 +67,8 @@ public class TimeManager : MonoBehaviour
     {
         currentTime = currentTime.AddSeconds(Time.deltaTime * timeMultiplier);
 
-        Debug.Log("Current Time: " + currentTime.TimeOfDay);
-        Debug.Log("Sunrise Time: " + sunriseTime);
+      //  Debug.Log("Current Time: " + currentTime.TimeOfDay);
+      //  Debug.Log("Sunrise Time: " + sunriseTime);
 
         if (currentTime.TimeOfDay <= sunriseTime.Add(TimeSpan.FromMinutes(1)) && currentTime.TimeOfDay >= sunriseTime)
         {
