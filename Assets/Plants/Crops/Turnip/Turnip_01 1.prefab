@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1617475610559753487
+--- !u!1 &3603719423576470878
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,55 +8,55 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1617475610559525167}
-  - component: {fileID: 8953099095498410498}
+  - component: {fileID: 3603719423576566142}
+  - component: {fileID: 8614486531059000836}
   m_Layer: 0
-  m_Name: CornPlant_03
+  m_Name: Turnip_01 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1617475610559525167
+--- !u!4 &3603719423576566142
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1617475610559753487}
+  m_GameObject: {fileID: 3603719423576470878}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2048254942126893699}
-  - {fileID: 8721849610943621203}
+  - {fileID: 7786011873163866782}
+  - {fileID: 3773919133968520433}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &8953099095498410498
+--- !u!205 &8614486531059000836
 LODGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1617475610559753487}
+  m_GameObject: {fileID: 3603719423576470878}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.04798302, y: 0.6917018, z: -0.04257554}
-  m_Size: 1.3866228
+  m_LocalReferencePoint: {x: -0.0205058, y: 0.16722436, z: -0.027991608}
+  m_Size: 0.45518062
   m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.25
+  - screenRelativeHeight: 0.055298354
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: 3672471577664961732}
-  - screenRelativeHeight: 0.014624992
+    - renderer: {fileID: 3927259334416898596}
+  - screenRelativeHeight: 0.01
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: 415679171595928392}
+    - renderer: {fileID: 1511652826477271560}
   m_Enabled: 1
---- !u!1 &3557770531933063404
+--- !u!1 &4558963716773574163
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,46 +64,46 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2048254942126893699}
-  - component: {fileID: 7087767672660309995}
-  - component: {fileID: 3672471577664961732}
-  - component: {fileID: 6215384760393423916}
+  - component: {fileID: 7786011873163866782}
+  - component: {fileID: 1887591049605518276}
+  - component: {fileID: 3927259334416898596}
+  - component: {fileID: 8550268666185805447}
   m_Layer: 0
-  m_Name: CornPlant_03_LOD0
+  m_Name: Turnip_01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2048254942126893699
+--- !u!4 &7786011873163866782
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3557770531933063404}
+  m_GameObject: {fileID: 4558963716773574163}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1617475610559525167}
+  m_Father: {fileID: 3603719423576566142}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7087767672660309995
+--- !u!33 &1887591049605518276
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3557770531933063404}
-  m_Mesh: {fileID: 1949995484579350510, guid: 6a3a095815dcba247a8c3abfd172a034, type: 3}
---- !u!23 &3672471577664961732
+  m_GameObject: {fileID: 4558963716773574163}
+  m_Mesh: {fileID: 8548142130040961093, guid: de2634e87eaccbf449078882bb654b1d, type: 3}
+--- !u!23 &3927259334416898596
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3557770531933063404}
+  m_GameObject: {fileID: 4558963716773574163}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -138,21 +138,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6215384760393423916
+--- !u!64 &8550268666185805447
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3557770531933063404}
+  m_GameObject: {fileID: 4558963716773574163}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1949995484579350510, guid: 6a3a095815dcba247a8c3abfd172a034, type: 3}
---- !u!1 &6397999602199750001
+  m_Mesh: {fileID: 8548142130040961093, guid: de2634e87eaccbf449078882bb654b1d, type: 3}
+--- !u!1 &6629836127009139132
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -160,45 +160,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8721849610943621203}
-  - component: {fileID: 7301379849151459803}
-  - component: {fileID: 415679171595928392}
+  - component: {fileID: 3773919133968520433}
+  - component: {fileID: 1148473275046729247}
+  - component: {fileID: 1511652826477271560}
   m_Layer: 0
-  m_Name: CornPlant_03_LOD1
+  m_Name: Turnip_01_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8721849610943621203
+--- !u!4 &3773919133968520433
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6397999602199750001}
+  m_GameObject: {fileID: 6629836127009139132}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1617475610559525167}
+  m_Father: {fileID: 3603719423576566142}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7301379849151459803
+--- !u!33 &1148473275046729247
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6397999602199750001}
-  m_Mesh: {fileID: 2939248669063132719, guid: 6a3a095815dcba247a8c3abfd172a034, type: 3}
---- !u!23 &415679171595928392
+  m_GameObject: {fileID: 6629836127009139132}
+  m_Mesh: {fileID: 4513817791887984798, guid: de2634e87eaccbf449078882bb654b1d, type: 3}
+--- !u!23 &1511652826477271560
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6397999602199750001}
+  m_GameObject: {fileID: 6629836127009139132}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1

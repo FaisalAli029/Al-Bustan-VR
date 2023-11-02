@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 637d155e25de02c47b87876b4ced3582, type: 3}
+  m_Name: CornSeed
+  m_EditorClassIdentifier: 
+  seedName: Corn
+  price: 4
+  initCropScale: {x: 0.1, y: 0.1, z: 0.1}
+  cropToPlant: {fileID: 1617475610559753487, guid: 640b8e6759edc1e4fb705ab322d85f96,
+    type: 3}
+  Seed: {fileID: 5157066508882383922, guid: 99318b3ddd2112a4085ee3a646ec237e, type: 3}

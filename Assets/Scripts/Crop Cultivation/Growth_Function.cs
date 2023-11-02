@@ -21,13 +21,9 @@ public class Growth_Function : MonoBehaviour
 
     public static event Action ResetPlotEvent;
 
-    private Grabbable grabbable;
-
     private void Awake()
     {
         cropData = GetComponent<CropCarrior>().crop;
-
-        grabbable = GetComponent<Grabbable>();
 
         wateringFunction = GetComponentInParent<Watering_Function>();
 
@@ -84,7 +80,8 @@ public class Growth_Function : MonoBehaviour
 
             grabbleCrop.transform.localScale = gameObject.transform.localScale;
 
-            transform.parent.parent.AddComponent<Unplotting_Function>().unplottedLand = this.unplottedLand;
+            if (transform.parent.parent.GetComponent<Unplotting_Function>() == null)
+                transform.parent.parent.AddComponent<Unplotting_Function>().unplottedLand = this.unplottedLand;
 
             Destroy(gameObject);
         }
