@@ -10,12 +10,12 @@ public class PlantingFunction : MonoBehaviour
     [SerializeField]
     private List<GameObject> spawnPoints;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.gameObject.CompareTag("Seeds"))
+        if (collision.gameObject.CompareTag("Seeds"))
         {
             // gettes the component that has the scriptable object related to the seed
-            CropSeedCarrior carrior = other.gameObject.GetComponent<CropSeedCarrior>();
+            CropSeedCarrior carrior = collision.gameObject.GetComponent<CropSeedCarrior>();
 
             if (carrior != null && carrior.cropSeedData != null && carrior.cropSeedData.cropToPlant != null)
             {
@@ -29,7 +29,7 @@ public class PlantingFunction : MonoBehaviour
             }
 
             // destroy the seed after finishing planting
-            Destroy(other.gameObject);
+            Destroy(collision.gameObject);
         }
     }
 }

@@ -12,6 +12,8 @@ public class Watering_Function : MonoBehaviour
 
     private Material _OriginalMat;
 
+    // TODO: Implemet a particale system that simulates the water coming out the watering can
+
     private void Awake()
     {
         _OriginalMat = GetComponentInChildren<Renderer>().material;
@@ -29,6 +31,8 @@ public class Watering_Function : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // TODO: make it so there is a delay to the trigger to simulate watering
+
         if (other.gameObject.CompareTag("WateringCan"))
         {
             gameObject.GetComponentInChildren<Renderer>().material = _WateredPlot;
