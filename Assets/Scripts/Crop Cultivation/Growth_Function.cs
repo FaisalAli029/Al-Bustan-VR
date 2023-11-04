@@ -26,8 +26,6 @@ public class Growth_Function : MonoBehaviour
         cropData = GetComponent<CropCarrior>().crop;
 
         wateringFunction = GetComponentInParent<Watering_Function>();
-
-        Debug.Log("awaken");
     }
 
     private void OnEnable()
@@ -35,8 +33,6 @@ public class Growth_Function : MonoBehaviour
         wateringFunction.OnWateredEvent += OnWatered;
 
         TimeManager.OnSunrise += OnSunrise;
-
-        Debug.Log("awaken");
     }
 
     private void OnDisable()
@@ -49,16 +45,12 @@ public class Growth_Function : MonoBehaviour
     private void OnWatered()
     {
         isWatered = true;
-
-        Debug.Log("watered");
     }
 
     private void OnSunrise()
     {
         isSunrise = true;
         CheckGrowth();
-
-        Debug.Log("it is sunrise");
     }
 
     private void CheckGrowth()
@@ -85,7 +77,5 @@ public class Growth_Function : MonoBehaviour
 
             Destroy(gameObject);
         }
-
-        Debug.Log("checked");
     }
 }
