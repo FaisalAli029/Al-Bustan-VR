@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4442874107585355240}
   - component: {fileID: 2100958750442395958}
   m_Layer: 0
-  m_Name: Onion_01
+  m_Name: GrabbableOnion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

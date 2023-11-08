@@ -101,9 +101,9 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3030221838488272498, guid: d886b2c7381f0a44f822a9903b2e3a27, type: 3}
 --- !u!1 &1498885717854486921
@@ -120,6 +120,7 @@ GameObject:
   - component: {fileID: 2592040909865371571}
   - component: {fileID: 4770042085509669870}
   - component: {fileID: 3320693505581938411}
+  - component: {fileID: 1953277851992819680}
   m_Layer: 0
   m_Name: GrabbleCarrot
   m_TagString: Crop
@@ -202,8 +203,8 @@ MonoBehaviour:
   RemoteGrabbable: 0
   RemoteGrabMechanic: 0
   RemoteGrabDistance: 2
-  ThrowForceMultiplier: 2
-  ThrowForceMultiplierAngular: 1.5
+  ThrowForceMultiplier: 1
+  ThrowForceMultiplierAngular: 1
   BreakDistance: 0
   HideHandGraphics: 1
   ParentToHands: 0
@@ -277,7 +278,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &3320693505581938411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,6 +294,28 @@ MonoBehaviour:
   RingOnValidPickup: 1
   RingOnValidRemotePickup: 1
   RingHelperScale: 0.2
+--- !u!64 &1953277851992819680
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498885717854486921}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3030221838488272498, guid: d886b2c7381f0a44f822a9903b2e3a27, type: 3}
 --- !u!1 &2841666508712868449
 GameObject:
   m_ObjectHideFlags: 0
