@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class UI_Controller : MonoBehaviour
 {
-    public void OnButtonClick()
+    public void QuitGame()
     {
         Application.Quit();
     }
