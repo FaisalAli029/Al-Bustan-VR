@@ -379,7 +379,7 @@ GameObject:
   - component: {fileID: 244868746}
   - component: {fileID: 244868745}
   m_Layer: 5
-  m_Name: QuitButton
+  m_Name: BackButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -449,9 +449,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 518455187}
+      - m_Target: {fileID: 518455191}
         m_TargetAssemblyTypeName: UI_Controller, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OptionsToMain
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1219,6 +1219,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e82635f73ac5cef409017526d329bcaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainMenu: {fileID: 2058116453}
+  optionsMenu: {fileID: 945426655}
 --- !u!1001 &527646847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1862,7 +1864,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 828131443}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 518455191}
+        m_TargetAssemblyTypeName: UI_Controller, Assembly-CSharp
+        m_MethodName: MainToOptions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &828131443
 MonoBehaviour:
   m_ObjectHideFlags: 0
