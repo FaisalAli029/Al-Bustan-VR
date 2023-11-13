@@ -115,7 +115,7 @@ GameObject:
   - component: {fileID: 3073186202251368953}
   - component: {fileID: 7069667660915658834}
   m_Layer: 0
-  m_Name: Pointer_01
+  m_Name: Pointer_01 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -274,7 +274,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: BUY
+  m_text: SELL
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ef2e67f7928fbf2439fec4414cf86128, type: 2}
   m_sharedMaterial: {fileID: -8075656441305966297, guid: ef2e67f7928fbf2439fec4414cf86128,
