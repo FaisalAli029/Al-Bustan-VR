@@ -2,26 +2,46 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using System;
 
 public class Coin_Collector : MonoBehaviour
 {
     [SerializeField]
     private int totalCoins;
 
-    [SerializeField]
-    private CropCarrior crop;
+    public static event Action CoinsChangedEvent;
 
-    public int TotalCoins { get; }
+    private List<GameObject> crops = new List<GameObject>();
+
+    public List<GameObject> Crops { get => crops; }
+
+    public int TotalCoins { get => totalCoins; set => totalCoins = value; }
 
     private void OnTriggerEnter(Collider other)
     {
-        crop = other.GetComponent<CropCarrior>();
+        if (other.gameObject.CompareTag("Crop") && !crops.Contains(other.gameObject))
+        {
+            CropCarrior crop = other.gameObject.GetComponent<CropCarrior>();
 
-        totalCoins += crop.crop.sellPrice;
+            totalCoins += crop.crop.sellPrice;
+
+            CoinsChangedEvent?.Invoke();
+
+            crops.Add(other.gameObject);
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        totalCoins -= crop.crop.sellPrice;
+        if (crops.Contains(other.gameObject))
+        {
+            CropCarrior crop = other.gameObject.GetComponent<CropCarrior>();
+
+            totalCoins -= crop.crop.sellPrice;
+
+            CoinsChangedEvent?.Invoke();
+
+            crops.Remove(other.gameObject);
+        }
     }
 }
