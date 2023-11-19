@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class UI_Controller : MonoBehaviour
+public class MainMenu_UI_Controllerller : MonoBehaviour
 {
     [SerializeField]
     private GameObject mainMenu;
@@ -26,5 +27,19 @@ public class UI_Controller : MonoBehaviour
     {
         optionsMenu.SetActive(true);
         mainMenu.SetActive(false);
+    }
+
+    public void NewGame()
+    {
+        ES3.DeleteFile();
+
+        // TODO: implement the transition to the main game scene
+        SceneManager.LoadScene(1);
+    }
+
+    public void LoadGame()
+    {
+        // TODO: Transition to the main game
+        SceneManager.LoadScene(1);
     }
 }

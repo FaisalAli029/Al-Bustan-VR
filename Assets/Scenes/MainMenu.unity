@@ -2028,7 +2028,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &945426656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2272,7 +2272,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Play Game
+  m_text: New Game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ef2e67f7928fbf2439fec4414cf86128, type: 2}
   m_sharedMaterial: {fileID: -8075656441305966297, guid: ef2e67f7928fbf2439fec4414cf86128,
@@ -2598,7 +2598,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1194219598}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 518455191}
+        m_TargetAssemblyTypeName: MainMenu_UI_Controllerller, Assembly-CSharp
+        m_MethodName: LoadGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1194219598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3285,7 +3297,7 @@ GameObject:
   - component: {fileID: 1858652021}
   - component: {fileID: 1858652020}
   m_Layer: 5
-  m_Name: PlayButton
+  m_Name: NewButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3354,7 +3366,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1858652021}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 518455191}
+        m_TargetAssemblyTypeName: MainMenu_UI_Controllerller, Assembly-CSharp
+        m_MethodName: NewGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1858652021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3613,7 +3637,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2058116454
 MonoBehaviour:
   m_ObjectHideFlags: 0
