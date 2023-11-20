@@ -45,6 +45,8 @@ public class Sell_Shop : MonoBehaviour
                 Destroy(crop);
             }
 
+            collector.Crops.Clear();
+
             // TODO: add a visual or audiable indicater for a successfull sale
         }
         else

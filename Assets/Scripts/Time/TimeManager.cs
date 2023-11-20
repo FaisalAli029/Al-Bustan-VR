@@ -44,6 +44,8 @@ public class TimeManager : MonoBehaviour
 
     private TimeSpan sunsetTime;
 
+    private bool eventFired;
+
     public static event Action OnSunrise;
 
     // Start is called before the first frame update
@@ -53,6 +55,8 @@ public class TimeManager : MonoBehaviour
 
         sunriseTime = TimeSpan.FromHours(sunriseHour);
         sunsetTime = TimeSpan.FromHours(sunsetHour);
+
+        eventFired = false;
     }
 
     // Update is called once per frame
@@ -67,14 +71,22 @@ public class TimeManager : MonoBehaviour
     {
         currentTime = currentTime.AddSeconds(Time.deltaTime * timeMultiplier);
 
-      //  Debug.Log("Current Time: " + currentTime.TimeOfDay);
-      //  Debug.Log("Sunrise Time: " + sunriseTime);
+        //  Debug.Log("Current Time: " + currentTime.TimeOfDay);
+        //  Debug.Log("Sunrise Time: " + sunriseTime);
 
         if (currentTime.TimeOfDay <= sunriseTime.Add(TimeSpan.FromMinutes(1)) && currentTime.TimeOfDay >= sunriseTime)
         {
-            OnSunrise?.Invoke();
+            if (!eventFired)
+            {
+                OnSunrise?.Invoke();
+                eventFired = true;
 
-            Debug.Log("Sunrise triggered!");
+                // Debug.Log("Sunrise triggered!");
+            }
+        }
+        else
+        {
+            eventFired = false;
         }
     }
 
