@@ -42,11 +42,16 @@ public class SellCrops : Objective
 
     public void OnCropSell(int totelSold)
     {
-        cropsSold = totelSold;
-
-        if (IsCompleted())
+        if (Objectives_Manager.currentObjective is SellCrops)
         {
-            Complete();
+            cropsSold = totelSold;
+
+            if (IsCompleted())
+            {
+                coinSystem.Coins += reward;
+
+                Complete();
+            }
         }
     }
 }

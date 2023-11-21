@@ -5,6 +5,8 @@ using UnityEngine;
 
 public abstract class Objective
 {
+    protected Coin_System coinSystem = GameObject.FindObjectOfType<Coin_System>();
+
     public event Action OnCompleted;
 
     public abstract bool IsCompleted();

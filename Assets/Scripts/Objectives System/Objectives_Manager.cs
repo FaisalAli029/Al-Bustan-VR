@@ -10,7 +10,7 @@ public class Objectives_Manager : MonoBehaviour
     private Queue<Objective> objectives;
 
     [SerializeField]
-    private Objective currentObjective;
+    public static Objective currentObjective;
 
     [SerializeField]
     private TextMeshProUGUI progress;
@@ -51,13 +51,13 @@ public class Objectives_Manager : MonoBehaviour
         {
             currentObjective = objectives.Dequeue();
             title.SetText(currentObjective.GetTitle());
-            reward.SetText(currentObjective.GetReward());
+            reward.SetText("$" + currentObjective.GetReward());
             currentObjective.OnCompleted += () => currentObjective = null;
         }
 
         if (currentObjective != null)
         {
-            progress.SetText(currentObjective.GetProgress() + "/" + currentObjective.GetGoal());
+            progress.SetText(currentObjective.GetProgress() + " / " + currentObjective.GetGoal());
         }
         else
         {

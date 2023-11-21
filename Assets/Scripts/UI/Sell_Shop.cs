@@ -45,6 +45,9 @@ public class Sell_Shop : MonoBehaviour
                 Destroy(crop);
             }
 
+            SellCrops objective = (SellCrops)Objectives_Manager.currentObjective;
+            objective.OnCropSell(collector.Crops.Count);
+
             collector.Crops.Clear();
 
             // TODO: add a visual or audiable indicater for a successfull sale
