@@ -135,4 +135,10 @@ public class TimeManager : MonoBehaviour
 
         return diff;
     }
+
+    // Method to get the current time of day as a float between 0 (night) and 1 (day)
+    public float GetCurrentTimeOfDay()
+    {
+        return (float)currentTime.TimeOfDay.TotalHours / 24f;
+    }
 }
