@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 8969731653743106256}
   - component: {fileID: 6651161023724158255}
   - component: {fileID: 7475481997082600791}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrabbableOnion
   m_TagString: Crop
   m_Icon: {fileID: 0}

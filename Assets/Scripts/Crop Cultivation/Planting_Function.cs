@@ -17,6 +17,8 @@ public class PlantingFunction : MonoBehaviour
             // gettes the component that has the scriptable object related to the seed
             CropSeedCarrior carrior = collision.gameObject.GetComponent<CropSeedCarrior>();
 
+            transform.root.tag = "Growing";
+
             if (carrior != null && carrior.cropSeedData != null && carrior.cropSeedData.cropToPlant != null)
             {
                 foreach (GameObject spawn in spawnPoints)

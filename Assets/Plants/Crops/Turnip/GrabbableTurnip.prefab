@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3489023570268219414}
   - component: {fileID: 8523134356348380920}
   - component: {fileID: 5756746319052692418}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrabbableTurnip
   m_TagString: Untagged
   m_Icon: {fileID: 0}

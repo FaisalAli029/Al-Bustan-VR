@@ -22,7 +22,7 @@ public class SellCrops : Objective
 
     public override string GetTitle()
     {
-        return "Sell a total of " + cropsNeeded;
+        return "Sell a total of " + cropsNeeded + " crops";
     }
 
     public override string GetReward()

@@ -38,6 +38,9 @@ public class TimeManager : MonoBehaviour
     [SerializeField]
     private float maxMoonLightIntensity;
 
+    [SerializeField]
+    private Material skyboxMaterial;
+
     private DateTime currentTime;
 
     private TimeSpan sunriseTime;
@@ -71,7 +74,7 @@ public class TimeManager : MonoBehaviour
     {
         currentTime = currentTime.AddSeconds(Time.deltaTime * timeMultiplier);
 
-        //  Debug.Log("Current Time: " + currentTime.TimeOfDay);
+        Debug.Log("Current Time: " + currentTime.TimeOfDay.TotalHours);
         //  Debug.Log("Sunrise Time: " + sunriseTime);
 
         if (currentTime.TimeOfDay <= sunriseTime.Add(TimeSpan.FromMinutes(1)) && currentTime.TimeOfDay >= sunriseTime)
@@ -134,11 +137,5 @@ public class TimeManager : MonoBehaviour
         }
 
         return diff;
-    }
-
-    // Method to get the current time of day as a float between 0 (night) and 1 (day)
-    public float GetCurrentTimeOfDay()
-    {
-        return (float)currentTime.TimeOfDay.TotalHours / 24f;
     }
 }

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4619366286079249997}
   - component: {fileID: 5607075020299339731}
   - component: {fileID: 8844136664612606006}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrabbableTomato
   m_TagString: Untagged
   m_Icon: {fileID: 0}

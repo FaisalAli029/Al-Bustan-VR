@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: d7832206b25b9994693d09b6fb5805a0, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 8a9dd7d65456d2143bb45b92da8d67b6, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 8900000, guid: 15941f70fce71784da1321794120ea6a, type: 3}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.99999905, g: 0, b: 0.99999905, a: 1}
+  m_IndirectSpecularColor: {r: 0.08596048, g: 0.13642637, b: 0.32298777, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -887,7 +887,6 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194230}
-  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -969,19 +968,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &963194229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f08a5f5391293147a162248bc6aebd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 1.2
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1760,6 +1746,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Backpack
       objectReference: {fileID: 0}
+    - target: {fileID: 5691717366042855857, guid: c99145ded050f544f93c5c074bff5ac0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5691717366042855866, guid: c99145ded050f544f93c5c074bff5ac0,
         type: 3}
       propertyPath: MinDistance
@@ -1923,7 +1914,7 @@ MonoBehaviour:
   GrabButton: 0
   Grabtype: 2
   GrabPhysics: 0
-  GrabMechanic: 1
+  GrabMechanic: 0
   GrabSpeed: 15
   RemoteGrabbable: 0
   RemoteGrabMechanic: 0
@@ -2233,6 +2224,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7156485401693536285, guid: 482ac63b431522c48805e6334e02d18d,
         type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156485401693536285, guid: 482ac63b431522c48805e6334e02d18d,
+        type: 3}
       propertyPath: m_TagString
       value: WateringCan
       objectReference: {fileID: 0}
@@ -2347,6 +2343,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rake_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622740356849034185, guid: edd9154d0dc011d49bb87027865b31ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5622740356849034185, guid: edd9154d0dc011d49bb87027865b31ac,
         type: 3}
@@ -2699,7 +2700,7 @@ MonoBehaviour:
   startHour: 6
   sunLight: {fileID: 705507994}
   sunriseHour: 7
-  sunsetHour: 20.5
+  sunsetHour: 19
   dayAmbientLight: {r: 0.27058828, g: 0.51847357, b: 0.94509804, a: 0}
   nightAmbientLight: {r: 0.15138839, g: 0.2705164, b: 0.3962264, a: 0}
   lightChangeCurve:
@@ -2738,6 +2739,7 @@ MonoBehaviour:
   maxSunLightIntensity: 1
   moonLight: {fileID: 2036317173}
   maxMoonLightIntensity: 0.5
+  skyboxMaterial: {fileID: 2100000, guid: d7832206b25b9994693d09b6fb5805a0, type: 2}
 --- !u!4 &2113274746
 Transform:
   m_ObjectHideFlags: 0

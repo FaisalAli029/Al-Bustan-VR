@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 8474483220303076213}
   m_HandleRect: {fileID: 7186086556320188399}
-  m_Direction: 3
+  m_Direction: 2
   m_Value: 0.5000001
   m_Size: 0.48387095
   m_NumberOfSteps: 0
@@ -1669,7 +1669,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6599065190545457092}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 208724270023603439}
+        m_TargetAssemblyTypeName: Buy_Shop, Assembly-CSharp
+        m_MethodName: SpawnSeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &208724270023603439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1806,7 +1818,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4487339344625903350}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7597492723091776680}
+        m_TargetAssemblyTypeName: Buy_Shop, Assembly-CSharp
+        m_MethodName: SpawnSeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7597492723091776680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1978,7 +2002,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5510554086223249155}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1463923571419652914}
+        m_TargetAssemblyTypeName: Buy_Shop, Assembly-CSharp
+        m_MethodName: SpawnSeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1463923571419652914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2670,7 +2706,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7031882395434613517}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3042346745120165419}
+        m_TargetAssemblyTypeName: Buy_Shop, Assembly-CSharp
+        m_MethodName: SpawnSeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3042346745120165419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2807,7 +2855,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4424445396833061078}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1297236721706550818}
+        m_TargetAssemblyTypeName: Buy_Shop, Assembly-CSharp
+        m_MethodName: SpawnSeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1297236721706550818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3289,7 +3349,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7571025015253576534}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3774522106700274730}
+        m_TargetAssemblyTypeName: Buy_Shop, Assembly-CSharp
+        m_MethodName: SpawnSeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3774522106700274730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3426,7 +3498,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2613867991368375478}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 217730476097781269}
+        m_TargetAssemblyTypeName: Buy_Shop, Assembly-CSharp
+        m_MethodName: SpawnSeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &217730476097781269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3563,7 +3647,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5370638210139724317}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6134158894379459542}
+        m_TargetAssemblyTypeName: Buy_Shop, Assembly-CSharp
+        m_MethodName: SpawnSeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6134158894379459542
 MonoBehaviour:
   m_ObjectHideFlags: 0

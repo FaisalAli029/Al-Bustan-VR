@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 5728003071341593657}
   - component: {fileID: 1891144974227657846}
   - component: {fileID: 8969496664956669928}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrabbleCorn
   m_TagString: Crop
   m_Icon: {fileID: 0}

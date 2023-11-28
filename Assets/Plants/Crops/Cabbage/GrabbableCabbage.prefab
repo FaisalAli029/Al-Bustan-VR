@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -2388483867896931690}
   - component: {fileID: -8224374123742445493}
   - component: {fileID: 8007253073002471502}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrabbableCabbage
   m_TagString: Crop
   m_Icon: {fileID: 0}

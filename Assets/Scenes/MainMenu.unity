@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 923125721}
-  m_IndirectSpecularColor: {r: 0.38843444, g: 0.72800046, b: 0.7325007, a: 1}
+  m_IndirectSpecularColor: {r: 0.38837025, g: 0.727684, b: 0.73245674, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2936,6 +2936,11 @@ PrefabInstance:
     - target: {fileID: 5883667856760302794, guid: 2af1d2045149fe743b81bc4d1a6f8406,
         type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5883667856760302794, guid: 2af1d2045149fe743b81bc4d1a6f8406,
+        type: 3}
+      propertyPath: AllowInput
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5883667856760302795, guid: 2af1d2045149fe743b81bc4d1a6f8406,
@@ -2945,8 +2950,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6552592445350430801, guid: 2af1d2045149fe743b81bc4d1a6f8406,
         type: 3}
+      propertyPath: HandSide
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552592445350430801, guid: 2af1d2045149fe743b81bc4d1a6f8406,
+        type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552592445350430801, guid: 2af1d2045149fe743b81bc4d1a6f8406,
+        type: 3}
+      propertyPath: ControlType
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8622308822696291321, guid: 2af1d2045149fe743b81bc4d1a6f8406,
         type: 3}

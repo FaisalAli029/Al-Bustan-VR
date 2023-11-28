@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 4770042085509669870}
   - component: {fileID: 3320693505581938411}
   - component: {fileID: 1953277851992819680}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrabbleCarrot
   m_TagString: Crop
   m_Icon: {fileID: 0}

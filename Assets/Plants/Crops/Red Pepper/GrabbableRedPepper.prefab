@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 5679674431952808814}
   - component: {fileID: 3465212569088526560}
   - component: {fileID: 2216091504551280662}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrabbableRedPepper
   m_TagString: Untagged
   m_Icon: {fileID: 0}

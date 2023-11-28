@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 9082950982231668156}
   - component: {fileID: 8189395260968449259}
   - component: {fileID: 8068492878993721695}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Green Pepper Seed
   m_TagString: Seeds
   m_Icon: {fileID: 0}
