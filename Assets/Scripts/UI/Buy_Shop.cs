@@ -31,6 +31,8 @@ public class Buy_Shop : MonoBehaviour
     {
         if (CheckCoins())
         {
+            Debug.Log("Activated");
+
             Instantiate(seed.Seed, seedSpawn.transform.position, seedSpawn.transform.rotation);
 
             if (coinSystem != null) { coinSystem.Coins -= seed.price; }
@@ -47,7 +49,7 @@ public class Buy_Shop : MonoBehaviour
     {
         if (coinSystem != null)
         {
-            if (coinSystem.Coins > 0)
+            if (coinSystem.Coins >= seed.price)
             {
                 return true;
             }

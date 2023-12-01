@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 8682659794135326836}
   - component: {fileID: 5180927617998612064}
   - component: {fileID: 2886961672615528904}
+  - component: {fileID: 872625363304927346}
   m_Layer: 0
   m_Name: Plotted Land
   m_TagString: Untagged
@@ -196,6 +197,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _WateredPlot: {fileID: 2100000, guid: 81278bff6a86cb34f8a84eb907f93aab, type: 2}
+--- !u!114 &872625363304927346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5169040268619702837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5324e272d9efa5a45b68fd3122a790f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pestcontrol: {fileID: 0}
 --- !u!1001 &6408086627931397172
 PrefabInstance:
   m_ObjectHideFlags: 0

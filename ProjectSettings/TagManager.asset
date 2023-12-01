@@ -9,6 +9,7 @@ TagManager:
   - WateringCan
   - Crop
   - Growing
+  - PestExec
   layers:
   - Default
   - TransparentFX

@@ -1338,6 +1338,37 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &3688078871454152342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1014384071162586224}
+  m_Layer: 0
+  m_Name: seedSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1014384071162586224
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3688078871454152342}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.483, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4805937639421221511}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3776669698890227190
 GameObject:
   m_ObjectHideFlags: 0
@@ -1695,7 +1726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seed: {fileID: 11400000, guid: 190d0aad9a9b55045bf2e52198973ce1, type: 2}
-  seedSpawn: {fileID: 0}
+  seedSpawn: {fileID: 3688078871454152342}
   coinSystem: {fileID: 0}
 --- !u!1 &4541666801029433417
 GameObject:
@@ -1844,7 +1875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seed: {fileID: 11400000, guid: b06bd7614ad8904469569771241c086f, type: 2}
-  seedSpawn: {fileID: 0}
+  seedSpawn: {fileID: 3688078871454152342}
   coinSystem: {fileID: 0}
 --- !u!1 &4802330469387827431
 GameObject:
@@ -2028,7 +2059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seed: {fileID: 11400000, guid: f46c288c09747bf44a0a1146eed14b1b, type: 2}
-  seedSpawn: {fileID: 0}
+  seedSpawn: {fileID: 3688078871454152342}
   coinSystem: {fileID: 0}
 --- !u!1 &6090563507393965725
 GameObject:
@@ -2732,7 +2763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seed: {fileID: 11400000, guid: 54373ed6959ac954184ec1769e047bc2, type: 2}
-  seedSpawn: {fileID: 0}
+  seedSpawn: {fileID: 3688078871454152342}
   coinSystem: {fileID: 0}
 --- !u!1 &8216276265270312884
 GameObject:
@@ -2881,7 +2912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seed: {fileID: 11400000, guid: f3fa1424d59a9ca43a5080cc5c5f738d, type: 2}
-  seedSpawn: {fileID: 0}
+  seedSpawn: {fileID: 3688078871454152342}
   coinSystem: {fileID: 0}
 --- !u!1 &8352978584192626646
 GameObject:
@@ -3375,7 +3406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seed: {fileID: 11400000, guid: e11dfd9b3a893f142bd2c63d121251fd, type: 2}
-  seedSpawn: {fileID: 0}
+  seedSpawn: {fileID: 3688078871454152342}
   coinSystem: {fileID: 0}
 --- !u!1 &9014146700605657372
 GameObject:
@@ -3524,7 +3555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seed: {fileID: 11400000, guid: 8b5dabef0fde29a448491c7b9565259d, type: 2}
-  seedSpawn: {fileID: 0}
+  seedSpawn: {fileID: 3688078871454152342}
   coinSystem: {fileID: 0}
 --- !u!1 &9070644465288788739
 GameObject:
@@ -3673,7 +3704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seed: {fileID: 11400000, guid: ac5258eea3dbd8f42b9f8abec638e26b, type: 2}
-  seedSpawn: {fileID: 0}
+  seedSpawn: {fileID: 3688078871454152342}
   coinSystem: {fileID: 0}
 --- !u!1 &9179643293018383234
 GameObject:
@@ -4049,7 +4080,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5528548355329725540, guid: a017d1abb3b5fe542a6ce24e902a88b4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1014384071162586224}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a017d1abb3b5fe542a6ce24e902a88b4, type: 3}
 --- !u!4 &4805937639421221511 stripped

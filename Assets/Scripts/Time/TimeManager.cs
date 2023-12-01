@@ -41,6 +41,9 @@ public class TimeManager : MonoBehaviour
     [SerializeField]
     private Material skyboxMaterial;
 
+    [SerializeField]
+    private TimeSpan pestSpawnTime;
+
     private DateTime currentTime;
 
     private TimeSpan sunriseTime;
@@ -50,6 +53,10 @@ public class TimeManager : MonoBehaviour
     private bool eventFired;
 
     public static event Action OnSunrise;
+
+    public DateTime CurrentTime { get { return currentTime; } }
+
+    public TimeSpan PestSpawnTime { get { return pestSpawnTime; } }
 
     // Start is called before the first frame update
     void Start()
@@ -74,7 +81,7 @@ public class TimeManager : MonoBehaviour
     {
         currentTime = currentTime.AddSeconds(Time.deltaTime * timeMultiplier);
 
-        Debug.Log("Current Time: " + currentTime.TimeOfDay.TotalHours);
+        //  Debug.Log("Current Time: " + currentTime.TimeOfDay.TotalHours);
         //  Debug.Log("Sunrise Time: " + sunriseTime);
 
         if (currentTime.TimeOfDay <= sunriseTime.Add(TimeSpan.FromMinutes(1)) && currentTime.TimeOfDay >= sunriseTime)
@@ -82,6 +89,10 @@ public class TimeManager : MonoBehaviour
             if (!eventFired)
             {
                 OnSunrise?.Invoke();
+
+                GetRandomTime();
+                Debug.Log(pestSpawnTime.Hours);
+
                 eventFired = true;
 
                 // Debug.Log("Sunrise triggered!");
@@ -137,5 +148,16 @@ public class TimeManager : MonoBehaviour
         }
 
         return diff;
+    }
+
+    // this method generates a random time between sunrise and sunset
+    public void GetRandomTime()
+    {
+        TimeSpan totalDuration = sunsetTime - sunriseTime;
+
+        // generate a random number within the total duration
+        double randomTicks = UnityEngine.Random.Range(0.0f, (float)totalDuration.TotalMilliseconds);
+
+        pestSpawnTime = sunriseTime.Add(TimeSpan.FromMilliseconds(randomTicks));
     }
 }

@@ -3,7 +3,9 @@ guid: 63eea56a77a11c946874f30abdcd5230
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - selectedPlot: {instanceID: 0}
+  - bar: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

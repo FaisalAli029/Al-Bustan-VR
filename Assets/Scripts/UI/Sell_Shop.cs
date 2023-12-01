@@ -15,6 +15,9 @@ public class Sell_Shop : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI text;
 
+    [SerializeField]
+    private SellCrops objective;
+
     private void Start()
     {
         coinSystem = FindObjectOfType<Coin_System>();
@@ -45,8 +48,11 @@ public class Sell_Shop : MonoBehaviour
                 Destroy(crop);
             }
 
-            SellCrops objective = (SellCrops)Objectives_Manager.currentObjective;
-            objective.OnCropSell(collector.Crops.Count);
+            if (objective != null)
+            {
+                objective = (SellCrops)Objectives_Manager.currentObjective;
+                objective.OnCropSell(collector.Crops.Count);
+            }
 
             collector.Crops.Clear();
 
