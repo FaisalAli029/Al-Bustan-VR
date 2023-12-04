@@ -19,3 +19,4 @@ MonoBehaviour:
   sellPrice: 2
   grabbleCrop: {fileID: 1820364841039167311, guid: 069d420ff2bf7e14bb08168a8267746f,
     type: 3}
+  cropInfo: {fileID: 11400000, guid: a03319ebcfe726d42bc199be7b94ed6a, type: 2}

@@ -11,4 +11,5 @@ public class CropData : ScriptableObject
     public int yield;
     public int sellPrice;
     public GameObject grabbleCrop;
+    public CropInfo cropInfo;
 }
