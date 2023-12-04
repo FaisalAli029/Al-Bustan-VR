@@ -13,6 +13,9 @@ public class Sell_Shop : MonoBehaviour
     private Coin_System coinSystem;
 
     [SerializeField]
+    private UnlockManager unlockManager;
+
+    [SerializeField]
     private TextMeshProUGUI text;
 
     [SerializeField]
@@ -21,6 +24,8 @@ public class Sell_Shop : MonoBehaviour
     private void Start()
     {
         coinSystem = FindObjectOfType<Coin_System>();
+
+        unlockManager = FindObjectOfType<UnlockManager>();
     }
 
     private void OnEnable()
@@ -45,6 +50,10 @@ public class Sell_Shop : MonoBehaviour
 
             foreach (GameObject crop in collector.Crops)
             {
+                CropCarrior carrior = crop.GetComponent<CropCarrior>();
+
+                unlockManager.IncrementUnlocks(carrior.crop);
+
                 Destroy(crop);
             }
 

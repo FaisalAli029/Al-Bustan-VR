@@ -13,6 +13,12 @@ public class UnlockButton : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI counter;
 
+    [SerializeField]
+    private TextMeshProUGUI label;
+
+    [SerializeField]
+    private InfoDisplay display;
+
     private UnityEngine.UI.Button button;
 
     private UnlockManager unlockManager;
@@ -21,7 +27,12 @@ public class UnlockButton : MonoBehaviour
     {
         unlockManager = FindObjectOfType<UnlockManager>();
 
+        display = FindObjectOfType<InfoDisplay>();
+
         button = GetComponent<UnityEngine.UI.Button>();
+        button.onClick.AddListener(DisplayInfoButton);
+
+        label.SetText(crop.cropName);
     }
 
     private void Update()
@@ -29,8 +40,20 @@ public class UnlockButton : MonoBehaviour
         if (unlockManager.CheckCropUnlock(crop))
         {
             button.interactable = true;
-
-            counter.SetText(unlockManager.InfoUnlockCounter[crop].ToString() + "/" + unlockManager.TotalNeeded);
         }
+
+        if (unlockManager.InfoUnlockCounter.ContainsKey(crop))
+        {
+            counter.SetText(unlockManager.InfoUnlockCounter[crop].ToString() + " / " + unlockManager.TotalNeeded);
+        }
+        else
+        {
+            counter.SetText("0 / " + unlockManager.TotalNeeded);
+        }
+    }
+
+    private void DisplayInfoButton()
+    {
+        display.DisplayInfo(crop.cropInfo);
     }
 }
