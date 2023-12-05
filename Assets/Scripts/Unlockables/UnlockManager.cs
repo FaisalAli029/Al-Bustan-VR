@@ -15,7 +15,14 @@ public class UnlockManager : MonoBehaviour
 
     private void Awake()
     {
-        infoUnlockCounter = new Dictionary<CropData, int>();
+        if (ES3.FileExists() || ES3.KeyExists("Unlockables"))
+        {
+            infoUnlockCounter = ES3.Load<Dictionary<CropData, int>>("Unlockables");
+        }
+        else
+        {
+            infoUnlockCounter = new Dictionary<CropData, int>();
+        }
     }
 
     public void IncrementUnlocks(CropData crop)
