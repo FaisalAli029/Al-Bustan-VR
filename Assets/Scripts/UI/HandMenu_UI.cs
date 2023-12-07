@@ -8,13 +8,18 @@ using UnityEngine.SceneManagement;
 public class HandMenu_UI : MonoBehaviour
 {
     [SerializeField]
-    private Button MainMenu;
+    private Button mainMenu;
+
+    [SerializeField]
+    private Button save;
 
     [SerializeField]
     private TextMeshProUGUI coinsText;
 
     [SerializeField]
     private TextMeshProUGUI timeText;
+
+    private SaveLoadSystem saveLoadSystem;
 
     private Coin_System coinSystem;
 
@@ -26,7 +31,11 @@ public class HandMenu_UI : MonoBehaviour
 
         timeManager = FindObjectOfType<TimeManager>();
 
-        MainMenu.onClick.AddListener(GoToMainMwnu);
+        saveLoadSystem = FindObjectOfType<SaveLoadSystem>();
+
+        mainMenu.onClick.AddListener(GoToMainMwnu);
+
+        save.onClick.AddListener(SaveGame);
     }
 
     private void Update()
@@ -38,6 +47,12 @@ public class HandMenu_UI : MonoBehaviour
 
     private void GoToMainMwnu()
     {
+        saveLoadSystem.Save();
+
+        ES3AutoSaveMgr.Current.Save();
+
         SceneManager.LoadScene(0);
     }
+
+    private void SaveGame() => saveLoadSystem.Save();
 }

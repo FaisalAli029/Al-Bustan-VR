@@ -10,6 +10,7 @@ TagManager:
   - Crop
   - Growing
   - PestExec
+  - Plotted
   layers:
   - Default
   - TransparentFX

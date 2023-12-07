@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 public class Objectives_Manager : MonoBehaviour
 {
@@ -21,10 +22,26 @@ public class Objectives_Manager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI title;
 
+    public Queue<Objective> Objectives { get { return objectives; } }
+
     private void Awake()
     {
-        objectives = new Queue<Objective>();
+        if (ES3.FileExists() && ES3.KeyExists("Objectives") && ES3.KeyExists("Objective"))
+        {
+            objectives = ES3.Load<Queue<Objective>>("Objectives");
+
+            currentObjective = ES3.Load<Objective>("Objective");
+        }
+        else
+        {
+            objectives = new Queue<Objective>();
+
+            currentObjective = null;
+        }
+
         TimeManager.OnSunrise += AddObjectives;
+
+        Debug.Log(currentObjective);
     }
 
     private void OnDestroy()
@@ -50,13 +67,13 @@ public class Objectives_Manager : MonoBehaviour
         if (currentObjective == null && objectives.Count > 0)
         {
             currentObjective = objectives.Dequeue();
-            title.SetText(currentObjective.GetTitle());
-            reward.SetText("$" + currentObjective.GetReward());
             currentObjective.OnCompleted += () => currentObjective = null;
         }
 
         if (currentObjective != null)
         {
+            title.SetText(currentObjective.GetTitle());
+            reward.SetText("$" + currentObjective.GetReward());
             progress.SetText(currentObjective.GetProgress() + " / " + currentObjective.GetGoal());
         }
         else

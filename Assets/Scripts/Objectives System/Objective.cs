@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[ES3Serializable]
 public abstract class Objective
 {
     protected Coin_System coinSystem = GameObject.FindObjectOfType<Coin_System>();

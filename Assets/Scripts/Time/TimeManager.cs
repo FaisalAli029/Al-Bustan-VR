@@ -59,9 +59,16 @@ public class TimeManager : MonoBehaviour
     public TimeSpan PestSpawnTime { get { return pestSpawnTime; } }
 
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        currentTime = DateTime.Now.Date + TimeSpan.FromHours(startHour);
+        if (ES3.FileExists() && ES3.KeyExists("currentTime"))
+        {
+            currentTime = ES3.Load<DateTime>("currentTime");
+        }
+        else
+        {
+            currentTime = DateTime.Now.Date + TimeSpan.FromHours(startHour);
+        }
 
         sunriseTime = TimeSpan.FromHours(sunriseHour);
         sunsetTime = TimeSpan.FromHours(sunsetHour);

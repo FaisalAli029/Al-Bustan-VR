@@ -11,12 +11,27 @@ public class Coin_System : MonoBehaviour
     [SerializeField]
     private const int MAX_COINS = 999;
 
+    [SerializeField]
+    private const int START_COINS = 0;
+
     public int Coins
     {
         get => coins;
         set
         {
             coins = Mathf.Clamp(value, 0, MAX_COINS);
+        }
+    }
+
+    private void Awake()
+    {
+        if (ES3.FileExists() && ES3.KeyExists("Coins"))
+        {
+            Coins = ES3.Load<int>("Coins");
+        }
+        else
+        {
+            Coins = START_COINS;
         }
     }
 

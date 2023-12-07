@@ -10,6 +10,9 @@ public class Growth_Function : MonoBehaviour
     [SerializeField]
     private GameObject unplottedLand;
 
+    [ES3Serializable, SerializeField]
+    private Watering_Function wateringFunction;
+
     private CropData cropData;
 
     private bool isWatered = false;
@@ -17,27 +20,32 @@ public class Growth_Function : MonoBehaviour
 
     private int growthCounter = 0;
 
-    private Watering_Function wateringFunction;
-
     public static event Action ResetPlotEvent;
 
     private void Awake()
     {
         cropData = GetComponent<CropCarrior>().crop;
+    }
 
+    private void Start()
+    {
         wateringFunction = GetComponentInParent<Watering_Function>();
+
+        Debug.Log(wateringFunction);
     }
 
     private void OnEnable()
     {
-        wateringFunction.OnWateredEvent += OnWatered;
+        if (wateringFunction != null)
+            wateringFunction.OnWateredEvent += OnWatered;
 
         TimeManager.OnSunrise += OnSunrise;
     }
 
     private void OnDisable()
     {
-        wateringFunction.OnWateredEvent -= OnWatered;
+        if (wateringFunction != null)
+            wateringFunction.OnWateredEvent -= OnWatered;
 
         TimeManager.OnSunrise -= OnSunrise;
     }

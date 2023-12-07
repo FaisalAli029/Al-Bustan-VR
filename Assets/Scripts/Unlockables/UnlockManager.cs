@@ -15,7 +15,7 @@ public class UnlockManager : MonoBehaviour
 
     private void Awake()
     {
-        if (ES3.FileExists() || ES3.KeyExists("Unlockables"))
+        if (ES3.FileExists() && ES3.KeyExists("Unlockables"))
         {
             infoUnlockCounter = ES3.Load<Dictionary<CropData, int>>("Unlockables");
         }
