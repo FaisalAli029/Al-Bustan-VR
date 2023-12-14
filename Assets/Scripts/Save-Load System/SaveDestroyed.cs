@@ -2,35 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SaveDestroyed : MonoBehaviour
+public class SaveDestroyedSeed : MonoBehaviour
 {
-    [ES3Serializable]
     public string guid;
 
-    static bool isApplicationQuitting = false;
-    static List<string> guids = new List<string>();
-
-    private void Awake()
-    {
-        guid = System.Guid.NewGuid().ToString();
-        guids.Add(guid);
-    }
+    private static bool isApplicationQuiting = false;
 
     private void Start()
     {
+        // Generate a new GUID if not assigned
+        if (string.IsNullOrEmpty(guid))
+            guid = System.Guid.NewGuid().ToString();
+
         if (ES3.KeyExists(guid))
             Destroy(this.gameObject);
     }
 
     private void OnDestroy()
     {
-        if (gameObject.scene.isLoaded && !isApplicationQuitting)
+        if (!Application.isPlaying) return;
+
+        if (gameObject.scene.isLoaded && !isApplicationQuiting)
             ES3.Save(guid, true);
     }
 
     private void OnApplicationQuit()
     {
-        isApplicationQuitting = true;
+        isApplicationQuiting = true;
     }
 }
 
