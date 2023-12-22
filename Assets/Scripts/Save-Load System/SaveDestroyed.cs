@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SaveDestroyedSeed : MonoBehaviour
+public class SaveDestroyed : MonoBehaviour
 {
     public string guid;
 

@@ -9,26 +9,26 @@ namespace ES3Types
 	{
 		public static ES3Type Instance = null;
 
-		public ES3UserType_SaveDestroyed() : base(typeof(SaveDestroyedSeed)){ Instance = this; priority = 1;}
+		public ES3UserType_SaveDestroyed() : base(typeof(SaveDestroyed)){ Instance = this; priority = 1;}
 
 
 		protected override void WriteComponent(object obj, ES3Writer writer)
 		{
-			var instance = (SaveDestroyedSeed)obj;
+			var instance = (SaveDestroyed)obj;
 			
 			writer.WritePrivateField("guid", instance);
 		}
 
 		protected override void ReadComponent<T>(ES3Reader reader, object obj)
 		{
-			var instance = (SaveDestroyedSeed)obj;
+			var instance = (SaveDestroyed)obj;
 			foreach(string propertyName in reader.Properties)
 			{
 				switch(propertyName)
 				{
 					
 					case "guid":
-					instance = (SaveDestroyedSeed)reader.SetPrivateField("guid", reader.Read<System.String>(), instance);
+					instance = (SaveDestroyed)reader.SetPrivateField("guid", reader.Read<System.String>(), instance);
 					break;
 					default:
 						reader.Skip();
@@ -43,7 +43,7 @@ namespace ES3Types
 	{
 		public static ES3Type Instance;
 
-		public ES3UserType_SaveDestroyedArray() : base(typeof(SaveDestroyedSeed[]), ES3UserType_SaveDestroyed.Instance)
+		public ES3UserType_SaveDestroyedArray() : base(typeof(SaveDestroyed[]), ES3UserType_SaveDestroyed.Instance)
 		{
 			Instance = this;
 		}
