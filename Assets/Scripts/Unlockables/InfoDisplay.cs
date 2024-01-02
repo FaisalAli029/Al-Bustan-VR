@@ -10,10 +10,10 @@ public class InfoDisplay : MonoBehaviour
     private Image cropImage;
 
     [SerializeField]
-    private TextMeshProUGUI cropDesc;
+    private Image cropLabel;
 
     [SerializeField]
-    private UnityEngine.UI.Button close;
+    private TextMeshProUGUI cropDesc;
 
     public void DisplayInfo(CropInfo info)
     {
@@ -23,6 +23,7 @@ public class InfoDisplay : MonoBehaviour
         }
 
         cropImage.sprite = info.cropImage;
+        cropLabel.sprite = info.cropLabel;
         cropDesc.SetText(info.description);
     }
 }

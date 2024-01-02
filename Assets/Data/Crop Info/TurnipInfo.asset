@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1526147f885010446b5de922eb42562e, type: 3}
   m_Name: TurnipInfo
   m_EditorClassIdentifier: 
-  cropImage: {fileID: 0}
-  description: 
+  cropImage: {fileID: 21300000, guid: 17ae5f026678b974ca4a4126f5e1ff8b, type: 3}
+  cropLabel: {fileID: 21300000, guid: e6f6698c03d0ba34f94a5066d4cdff37, type: 3}
+  description: 'Growth Time: 8<br> Sell Price: 10'

@@ -6,5 +6,6 @@ using UnityEngine;
 public class CropInfo : ScriptableObject
 {
     public Sprite cropImage;
+    public Sprite cropLabel;
     public string description;
 }

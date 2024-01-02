@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1526147f885010446b5de922eb42562e, type: 3}
   m_Name: CabbageInfo
   m_EditorClassIdentifier: 
-  cropImage: {fileID: 0}
-  description: 
+  cropImage: {fileID: 21300000, guid: cf8b7e757e71aba4090dbde1050fded3, type: 3}
+  cropLabel: {fileID: 21300000, guid: e79da82c566608b49998d33b803475fc, type: 3}
+  description: 'Growth Time: 3<br> Sell Price: 5'

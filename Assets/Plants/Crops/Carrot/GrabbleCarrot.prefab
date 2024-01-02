@@ -121,6 +121,9 @@ GameObject:
   - component: {fileID: 4770042085509669870}
   - component: {fileID: 3320693505581938411}
   - component: {fileID: 1953277851992819680}
+  - component: {fileID: -551672023467468886}
+  - component: {fileID: -160584886531621287}
+  - component: {fileID: -8458716209698598417}
   m_Layer: 10
   m_Name: GrabbleCarrot
   m_TagString: Crop
@@ -316,6 +319,97 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3030221838488272498, guid: d886b2c7381f0a44f822a9903b2e3a27, type: 3}
+--- !u!114 &-551672023467468886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498885717854486921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc0f6e11a75f1304facab559a229e25a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guid: 
+--- !u!114 &-160584886531621287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498885717854486921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baff8732cd3074ef88b34f9cc487846d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabId: 3688928564965659812
+  localRefs:
+    _Keys:
+    - {fileID: -8458716209698598417}
+    - {fileID: 5633042570214532083}
+    - {fileID: 9134398877205773298}
+    - {fileID: 11500000, guid: fb94e28432a94164682e3ff45cbab717, type: 3}
+    - {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+    - {fileID: 4800000, guid: e6e9a19c3678ded42a3bc431ebef7dbd, type: 3}
+    - {fileID: 4800000, guid: 36e335017ad71d54fbb10842863188ae, type: 3}
+    - {fileID: -160584886531621287}
+    - {fileID: 2344043341305513135}
+    - {fileID: 6471085529611002088}
+    - {fileID: 2592040909865371571}
+    - {fileID: 573463137475890219}
+    - {fileID: 6304593600071918942}
+    - {fileID: 11500000, guid: 1526147f885010446b5de922eb42562e, type: 3}
+    - {fileID: 11500000, guid: ab52d2f563d6a2547a95671c153ebbb3, type: 3}
+    - {fileID: 11500000, guid: ec6eb843ea0a41a4588473a54a510c9e, type: 3}
+    - {fileID: 11500000, guid: 9cfcc9ceea0bf419cb3bcaf548c2600d, type: 3}
+    - {fileID: 11500000, guid: bc0f6e11a75f1304facab559a229e25a, type: 3}
+    - {fileID: 1498885717854486921}
+    - {fileID: -551672023467468886}
+    - {fileID: 2841666508712868449}
+    - {fileID: 1953277851992819680}
+    - {fileID: 3225493401032669916}
+    - {fileID: 4770042085509669870}
+    - {fileID: 9161379505955304402}
+    - {fileID: 1498885717854002601}
+    - {fileID: 11500000, guid: 5cdea428d48e2bb488d33d5f75c39bb9, type: 3}
+    - {fileID: 8582701890107186468}
+    - {fileID: 11500000, guid: baff8732cd3074ef88b34f9cc487846d, type: 3}
+    - {fileID: 3320693505581938411}
+    - {fileID: 4085619709038354793}
+    - {fileID: 7611590170932648120}
+    - {fileID: 7697768000514933756}
+    - {fileID: 781421878631393405}
+    - {fileID: 11500000, guid: 9b5b1b54556836a49948cf0f09394c28, type: 3}
+    - {fileID: -3030221838488272498, guid: d886b2c7381f0a44f822a9903b2e3a27, type: 3}
+    - {fileID: 2100000, guid: 4653e7496c618dd428006dd2cedba140, type: 2}
+    - {fileID: -8623782288373665515, guid: d886b2c7381f0a44f822a9903b2e3a27, type: 3}
+    - {fileID: 2800000, guid: e43eb286c19cc8646864d00caf8e2c8d, type: 3}
+    - {fileID: 11400000, guid: 6ac160eed1689ee41bed94ff6f96d2fe, type: 2}
+    - {fileID: 11400000, guid: 7f11e549dcf20134689e50f5542969dd, type: 2}
+    _Values: 25c37c33b3856a415f1e2b3ffc5c8a4a3cb877ecc07a9e2c294916f5c454821f50cab04463fe98251eca154fb038a119dbfe894332937107bc8e649899621a5fd47651ab91c2095e4cb11db4cbd3d15a1a5596a17541076d862443ef69225f3547c517b04c1f5648044e768a1f18e60d256e6fd84a1d9d3346e87b1b28c6f74fa77f644348a1256b746fccc6b7dcba200900178efbecf2299591ea86784fe82551a8bb8ccaab8c104cff2f09a4a2b42658032e3c213aad1d3288c1e2780f243b58f14cdc20aa8918ef507c3ae7f6886119cdc538cecba64d53e9fa189cc859489c54585ad37927095e467d613e4ba423dbd0afaa360f0b743b3513eafe115652f8170e75281bc278f5518596dc70d63d888c5c58fbd088615a448cfb206fb34293a83ccb18af125460cc0fd44a1e6522ea3a6172b4fd560a474e4ff1820f5345b4729c4cde803f26
+--- !u!114 &-8458716209698598417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498885717854486921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cfcc9ceea0bf419cb3bcaf548c2600d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveLayer: 0
+  saveTag: 0
+  saveName: 0
+  saveHideFlags: 0
+  saveActive: 0
+  saveChildren: 0
+  componentsToSave:
+  - {fileID: 1498885717854002601}
+  - {fileID: -551672023467468886}
 --- !u!1 &2841666508712868449
 GameObject:
   m_ObjectHideFlags: 0

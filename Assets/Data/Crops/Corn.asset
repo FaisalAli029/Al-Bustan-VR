@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cropName: Corn
   growthScale: {x: 0.3, y: 0.3, z: 0.3}
-  growthTime: 3
+  growthTime: 5
   yield: 1
   sellPrice: 7
   grabbleCrop: {fileID: 6664736444758213770, guid: 639191c72c989b34cb83216ccd6c5916,

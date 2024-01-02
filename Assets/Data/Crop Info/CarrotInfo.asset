@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1526147f885010446b5de922eb42562e, type: 3}
   m_Name: CarrotInfo
   m_EditorClassIdentifier: 
-  cropImage: {fileID: 0}
-  description: 
+  cropImage: {fileID: 21300000, guid: 317c7ad16aa791142aa6de11c64a9fd1, type: 3}
+  cropLabel: {fileID: 21300000, guid: d76f27583562d9b4190d73b6528bf8a0, type: 3}
+  description: 'Growth Time: 4<br> Sell Price: 2'

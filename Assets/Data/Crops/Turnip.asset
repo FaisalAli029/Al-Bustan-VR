@@ -16,7 +16,7 @@ MonoBehaviour:
   growthScale: {x: 0.1, y: 0.1, z: 0.1}
   growthTime: 8
   yield: 1
-  sellPrice: 20
+  sellPrice: 10
   grabbleCrop: {fileID: 3603719423576470878, guid: b11a506ebf2259e499f69db7e2293d7a,
     type: 3}
   cropInfo: {fileID: 11400000, guid: 9c6a8a5d74859344d8eb986e9cb93c95, type: 2}

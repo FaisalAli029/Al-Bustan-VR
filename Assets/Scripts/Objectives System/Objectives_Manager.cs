@@ -51,7 +51,7 @@ public class Objectives_Manager : MonoBehaviour
 
     private void AddObjectives()
     {
-        int[] goalRanges = new int[] {25, 50};
+        int[] goalRanges = new int[] {5, 10};
         int goalSelectedIndex = Random.Range(0, goalRanges.Length);
         int goalSelected = goalRanges[goalSelectedIndex];
 

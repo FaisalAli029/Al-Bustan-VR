@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1526147f885010446b5de922eb42562e, type: 3}
   m_Name: OnionInfo
   m_EditorClassIdentifier: 
-  cropImage: {fileID: 0}
-  description: 
+  cropImage: {fileID: 21300000, guid: 3c7729c9b61653c4e99cca4d83c160cc, type: 3}
+  cropLabel: {fileID: 21300000, guid: 1d61183a16fc0304c85d3ccbbb522ca1, type: 3}
+  description: 'Growth Time: 6<br> Sell Price: 8'

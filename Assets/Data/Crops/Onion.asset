@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cropName: Onion
   growthScale: {x: 0.17, y: 0.17, z: 0.17}
-  growthTime: 3
+  growthTime: 6
   yield: 1
   sellPrice: 8
   grabbleCrop: {fileID: 4442874107584856520, guid: cb9431e0ba49c5b4f890bad267ff7de9,

@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1526147f885010446b5de922eb42562e, type: 3}
   m_Name: GreenPepperInfo
   m_EditorClassIdentifier: 
-  cropImage: {fileID: 0}
-  description: 
+  cropImage: {fileID: 21300000, guid: 06b3d27c5281fc645894b35ecb490e3d, type: 3}
+  cropLabel: {fileID: 21300000, guid: 4cfc8fa611f99864fb630b869cb9f10e, type: 3}
+  description: 'Growth Time: 3<br> Sell Price: 2'

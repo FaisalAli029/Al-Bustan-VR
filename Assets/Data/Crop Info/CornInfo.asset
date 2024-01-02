@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1526147f885010446b5de922eb42562e, type: 3}
   m_Name: CornInfo
   m_EditorClassIdentifier: 
-  cropImage: {fileID: 0}
-  description: 
+  cropImage: {fileID: 21300000, guid: c25f384ae88c14a47bc2788855a0a72b, type: 3}
+  cropLabel: {fileID: 21300000, guid: d6bf66c370257554a8791469ab8b798e, type: 3}
+  description: 'Growth Time: 5<br> Sell Price: 7'

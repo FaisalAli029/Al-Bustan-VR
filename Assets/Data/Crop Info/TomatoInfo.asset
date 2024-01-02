@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1526147f885010446b5de922eb42562e, type: 3}
   m_Name: TomatoInfo
   m_EditorClassIdentifier: 
-  cropImage: {fileID: 0}
-  description: 
+  cropImage: {fileID: 21300000, guid: 6dcf8852c2d15624f858102edb3ced27, type: 3}
+  cropLabel: {fileID: 21300000, guid: 390d6cdf821859e4697387be708044f0, type: 3}
+  description: 'Growth Time: 5<br> Sell Price: 2'
