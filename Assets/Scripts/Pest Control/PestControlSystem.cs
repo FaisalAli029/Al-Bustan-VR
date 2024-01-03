@@ -25,6 +25,12 @@ public class PestControlSystem : MonoBehaviour
     [SerializeField]
     private GameObject unplottedLand;
 
+    [SerializeField]
+    private AudioClip startSound;
+
+    [SerializeField]
+    private AudioClip witheredSound;
+
     private TimeManager timeManager;
 
     private bool eventFired;
@@ -49,6 +55,8 @@ public class PestControlSystem : MonoBehaviour
     {
         if (selectedPlot != null)
         {
+            AudioSource.PlayClipAtPoint(startSound, this.gameObject.transform.position);
+
             currentBarUI = Instantiate(barUI, selectedPlot.transform);
 
             bar = GameObject.Find("Bar");
@@ -105,6 +113,8 @@ public class PestControlSystem : MonoBehaviour
 
     private void DestroyPlot()
     {
+        AudioSource.PlayClipAtPoint(witheredSound, this.gameObject.transform.position);
+
         Instantiate(unplottedLand, selectedPlot.transform.position, selectedPlot.transform.rotation);
 
         Destroy(selectedPlot);

@@ -16,6 +16,12 @@ public class Buy_Shop : MonoBehaviour
     [SerializeField]
     private Coin_System coinSystem;
 
+    [SerializeField]
+    private AudioClip successSound;
+
+    [SerializeField]
+    private AudioClip failureSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,11 +43,11 @@ public class Buy_Shop : MonoBehaviour
 
             if (coinSystem != null) { coinSystem.Coins -= seed.price; }
 
-            // TODO: add a audiable que for successfull purchase
+            AudioSource.PlayClipAtPoint(successSound, this.gameObject.transform.position);
         }
         else
         {
-            // TODO: add a audiable que for unsuccessfull purchase
+            AudioSource.PlayClipAtPoint(failureSound, this.gameObject.transform.position);
         }
     }
 

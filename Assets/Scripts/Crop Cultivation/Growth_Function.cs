@@ -31,14 +31,12 @@ public class Growth_Function : MonoBehaviour
     {
         wateringFunction = GetComponentInParent<Watering_Function>();
 
-        Debug.Log(wateringFunction);
+        if (wateringFunction != null)
+            wateringFunction.OnWateredEvent += OnWatered;
     }
 
     private void OnEnable()
     {
-        if (wateringFunction != null)
-            wateringFunction.OnWateredEvent += OnWatered;
-
         TimeManager.OnSunrise += OnSunrise;
     }
 

@@ -7,6 +7,9 @@ public class PestExterminate : MonoBehaviour
     [SerializeField]
     private PestControlSystem pestcontrol;
 
+    [SerializeField]
+    private AudioClip successSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +20,8 @@ public class PestExterminate : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PestExec"))
         {
+            AudioSource.PlayClipAtPoint(successSound, this.gameObject.transform.position);
+
             pestcontrol.StopTimer();
         }
     }

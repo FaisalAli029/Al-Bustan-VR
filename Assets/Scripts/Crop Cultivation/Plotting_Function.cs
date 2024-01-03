@@ -15,10 +15,6 @@ public class PlottingFunction : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        // Debug.Log("hit"); // to test if collision is detected
-
-        // TODO: implement a way to decrease the hit counter passed on the upgrade counter on the rake
-
         if (collision.gameObject.CompareTag("Rake"))
         {
             hitCount++;

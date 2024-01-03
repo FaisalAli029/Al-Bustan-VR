@@ -18,6 +18,12 @@ public class Sell_Shop : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI text;
 
+    [SerializeField]
+    private AudioClip successSound;
+
+    [SerializeField]
+    private AudioClip failureSound;
+
     private void Awake()
     {
         coinSystem = FindObjectOfType<Coin_System>();
@@ -62,11 +68,11 @@ public class Sell_Shop : MonoBehaviour
 
             collector.Crops.Clear();
 
-            // TODO: add a visual or audiable indicater for a successfull sale
+            AudioSource.PlayClipAtPoint(successSound, this.gameObject.transform.position);
         }
         else
         {
-            // TODO: add a visual or audiable indicater for a unsuccessfull sale
+            AudioSource.PlayClipAtPoint(failureSound, this.gameObject.transform.position);
         }
     }
 

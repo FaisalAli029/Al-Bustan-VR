@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seedName: Corn
   price: 4
-  initCropScale: {x: 0.1, y: 0.1, z: 0.1}
+  initCropScale: {x: 0.2, y: 0.2, z: 0.2}
   cropToPlant: {fileID: 1617475610559753487, guid: 640b8e6759edc1e4fb705ab322d85f96,
     type: 3}
   Seed: {fileID: 5157066508882383922, guid: 99318b3ddd2112a4085ee3a646ec237e, type: 3}

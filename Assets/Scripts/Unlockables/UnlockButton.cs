@@ -27,7 +27,7 @@ public class UnlockButton : MonoBehaviour
     {
         unlockManager = FindObjectOfType<UnlockManager>();
 
-        display = FindObjectOfType<InfoDisplay>();
+        display = FindObjectOfType<InfoDisplay>(true);
 
         button = GetComponent<UnityEngine.UI.Button>();
         button.onClick.AddListener(DisplayInfoButton);

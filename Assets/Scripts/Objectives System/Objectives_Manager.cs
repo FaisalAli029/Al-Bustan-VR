@@ -22,6 +22,9 @@ public class Objectives_Manager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI title;
 
+    [SerializeField]
+    private AudioClip completed;
+
     public Queue<Objective> Objectives { get { return objectives; } }
 
     private void Awake()
@@ -67,6 +70,7 @@ public class Objectives_Manager : MonoBehaviour
         if (currentObjective == null && objectives.Count > 0)
         {
             currentObjective = objectives.Dequeue();
+            currentObjective.OnCompleted += () => AudioSource.PlayClipAtPoint(completed, this.gameObject.transform.position);
             currentObjective.OnCompleted += () => currentObjective = null;
         }
 
