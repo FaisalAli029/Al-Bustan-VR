@@ -27,6 +27,10 @@ public class Objectives_Manager : MonoBehaviour
 
     public Queue<Objective> Objectives { get { return objectives; } }
 
+    /* at script awakening, checks if any objectives are stored in storage.
+     * if so, the data is retreived and stored in the queue.
+     * if not, then default values are instead added.
+     */
     private void Awake()
     {
         if (ES3.FileExists() && ES3.KeyExists("Objectives") && ES3.KeyExists("Objective"))
@@ -44,7 +48,7 @@ public class Objectives_Manager : MonoBehaviour
 
         TimeManager.OnSunrise += AddObjectives;
 
-        Debug.Log(currentObjective);
+        // Debug.Log(currentObjective);
     }
 
     private void OnDestroy()
@@ -52,6 +56,7 @@ public class Objectives_Manager : MonoBehaviour
         TimeManager.OnSunrise -= AddObjectives;
     }
 
+    // randomly gnerate objectives when event is invoked
     private void AddObjectives()
     {
         int[] goalRanges = new int[] {5, 10};
@@ -62,18 +67,19 @@ public class Objectives_Manager : MonoBehaviour
 
         objectives.Enqueue(new SellCrops(goalSelected, reward));
 
-        Debug.Log(objectives.Count);
+        // Debug.Log(objectives.Count);
     }
 
     private void Update()
     {
+        // if no objective is active, one is retrived from the queue
         if (currentObjective == null && objectives.Count > 0)
         {
             currentObjective = objectives.Dequeue();
             currentObjective.OnCompleted += () => AudioSource.PlayClipAtPoint(completed, this.gameObject.transform.position);
             currentObjective.OnCompleted += () => currentObjective = null;
         }
-
+        // updated the UI based on the current objective status
         if (currentObjective != null)
         {
             title.SetText(currentObjective.GetTitle());

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// a blueprint for creating objectives
 [ES3Serializable]
 public abstract class Objective
 {

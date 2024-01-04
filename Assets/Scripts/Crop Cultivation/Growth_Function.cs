@@ -10,6 +10,7 @@ public class Growth_Function : MonoBehaviour
     [SerializeField]
     private GameObject unplottedLand;
 
+    // get the script from local plot
     [ES3Serializable, SerializeField]
     private Watering_Function wateringFunction;
 
@@ -31,6 +32,7 @@ public class Growth_Function : MonoBehaviour
     {
         wateringFunction = GetComponentInParent<Watering_Function>();
 
+        // ensure that the script is not empty before subscribing to it
         if (wateringFunction != null)
             wateringFunction.OnWateredEvent += OnWatered;
     }
@@ -48,17 +50,25 @@ public class Growth_Function : MonoBehaviour
         TimeManager.OnSunrise -= OnSunrise;
     }
 
+    // watered when event is invoked
     private void OnWatered()
     {
         isWatered = true;
     }
 
+    // changes to true and triggers the check of crop's growth
     private void OnSunrise()
     {
         isSunrise = true;
         CheckGrowth();
     }
 
+    /*
+     * this method first checks if all conditions are meat for growth
+     * if so the scale of the crop incremented.
+     * when the crop reaches maturity, a grabble version of the crops are created.
+     * the plot return to a "Unplotted" state.
+     */
     private void CheckGrowth()
     {
         if (isWatered && isSunrise && growthCounter < cropData.growthTime)

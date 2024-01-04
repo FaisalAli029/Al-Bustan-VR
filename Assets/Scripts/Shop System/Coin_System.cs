@@ -23,6 +23,7 @@ public class Coin_System : MonoBehaviour
         }
     }
 
+    // if avalible, restores coins from local storage
     private void Awake()
     {
         if (ES3.FileExists() && ES3.KeyExists("Coins"))

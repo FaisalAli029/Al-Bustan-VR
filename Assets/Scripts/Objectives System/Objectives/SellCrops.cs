@@ -43,8 +43,10 @@ public class SellCrops : Objective
         return goal.ToString();
     }
 
+    // increment the progress of the objective
     public void OnCropSell(int totelSold)
     {
+        // checks if current objective is the right type of objective
         if (Objectives_Manager.currentObjective is SellCrops)
         {
             Debug.Log("SellCrop");

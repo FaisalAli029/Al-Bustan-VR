@@ -35,6 +35,7 @@ public class UnlockButton : MonoBehaviour
         label.SetText(crop.cropName);
     }
 
+    // this method checks the button should be unlocked or not
     private void Update()
     {
         if (unlockManager.CheckCropUnlock(crop))
@@ -52,6 +53,7 @@ public class UnlockButton : MonoBehaviour
         }
     }
 
+    // display the info when button is clicked
     private void DisplayInfoButton()
     {
         display.DisplayInfo(crop.cropInfo);

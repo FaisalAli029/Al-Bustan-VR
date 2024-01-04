@@ -9,12 +9,14 @@ public class Unplotting_Function : MonoBehaviour
 
     private bool isTriggered = false;
 
+    // when triggered, reset the plot back to a "Unplotted" state
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Crop") && !isTriggered)
         {
             ResetPolt();
 
+            // ensures that the trigger is only executed once
             isTriggered = true;
         }
     }

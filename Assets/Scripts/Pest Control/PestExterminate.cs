@@ -16,6 +16,7 @@ public class PestExterminate : MonoBehaviour
         pestcontrol = FindObjectOfType<PestControlSystem>();
     }
 
+    // when triggered, stops the timer and destroys the timer bar
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("PestExec"))

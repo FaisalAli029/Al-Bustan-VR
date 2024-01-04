@@ -13,6 +13,7 @@ public class UnlockManager : MonoBehaviour
 
     public int TotalNeeded { get { return totalNeeded; } }
 
+    // retrives unlockable's progress from local stroage if exists
     private void Awake()
     {
         if (ES3.FileExists() && ES3.KeyExists("Unlockables"))
@@ -25,6 +26,7 @@ public class UnlockManager : MonoBehaviour
         }
     }
 
+    // this method increments the progress of unlockables based on crops given
     public void IncrementUnlocks(CropData crop)
     {
         if (infoUnlockCounter.ContainsKey(crop))
@@ -37,6 +39,7 @@ public class UnlockManager : MonoBehaviour
         }
     }
 
+    // checks if the unlockable is unlocked
     public bool CheckCropUnlock(CropData crop)
     {
         if (infoUnlockCounter.ContainsKey(crop))

@@ -15,6 +15,7 @@ public class InfoDisplay : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI cropDesc;
 
+    // display the information and enable the UI
     public void DisplayInfo(CropInfo info)
     {
         if (gameObject.activeSelf != true)

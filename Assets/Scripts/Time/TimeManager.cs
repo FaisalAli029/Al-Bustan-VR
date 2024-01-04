@@ -58,7 +58,7 @@ public class TimeManager : MonoBehaviour
 
     public TimeSpan PestSpawnTime { get { return pestSpawnTime; } }
 
-    // Start is called before the first frame update
+    // gets the current time from local storage if exists
     private void Awake()
     {
         if (ES3.FileExists() && ES3.KeyExists("currentTime"))
@@ -84,6 +84,7 @@ public class TimeManager : MonoBehaviour
         UpdateLightSettings();
     }
 
+    // updates the current time of the day
     private void UpdateTimeOfDay()
     {
         currentTime = currentTime.AddSeconds(Time.deltaTime * timeMultiplier);
@@ -91,6 +92,7 @@ public class TimeManager : MonoBehaviour
         //  Debug.Log("Current Time: " + currentTime.TimeOfDay.TotalHours);
         //  Debug.Log("Sunrise Time: " + sunriseTime);
 
+        // when a time range is reached, the event is invoked
         if (currentTime.TimeOfDay <= sunriseTime.Add(TimeSpan.FromMinutes(1)) && currentTime.TimeOfDay >= sunriseTime)
         {
             if (!eventFired)
@@ -98,8 +100,9 @@ public class TimeManager : MonoBehaviour
                 OnSunrise?.Invoke();
 
                 GetRandomTime();
-                Debug.Log(pestSpawnTime.Hours);
+                // Debug.Log(pestSpawnTime.Hours);
 
+                // ensure the event is invoked once
                 eventFired = true;
 
                 // Debug.Log("Sunrise triggered!");
@@ -111,6 +114,7 @@ public class TimeManager : MonoBehaviour
         }
     }
 
+    // rotates the sun based on the current time of day
     private void RotateSun()
     {
         float sunLightRotation;
@@ -137,6 +141,7 @@ public class TimeManager : MonoBehaviour
         sunLight.transform.rotation = Quaternion.AngleAxis(sunLightRotation, Vector3.right);
     }
 
+    // control the lighting of the sun based on the current time
     private void UpdateLightSettings()
     {
         float dotProduct = Vector3.Dot(sunLight.transform.forward, Vector3.down);
@@ -145,6 +150,7 @@ public class TimeManager : MonoBehaviour
         RenderSettings.ambientLight = Color.Lerp(nightAmbientLight, dayAmbientLight, lightChangeCurve.Evaluate(dotProduct));
     }
 
+    // calculates the differeance between given time
     private TimeSpan CalculateTimeDifference(TimeSpan fromTime, TimeSpan toTime)
     {
         TimeSpan diff = toTime - fromTime;

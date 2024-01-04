@@ -32,7 +32,7 @@ public class Buy_Shop : MonoBehaviour
         coinSystem = FindObjectOfType<Coin_System>();
     }
 
-    // TODO: Add the method to spawn the seed if the player has enough coins
+    // spawn a seed when the button is clicked and the player has enough coins
     public void SpawnSeed()
     {
         if (CheckCoins())
@@ -51,6 +51,7 @@ public class Buy_Shop : MonoBehaviour
         }
     }
 
+    // checks if the player has enough coins
     private bool CheckCoins()
     {
         if (coinSystem != null)

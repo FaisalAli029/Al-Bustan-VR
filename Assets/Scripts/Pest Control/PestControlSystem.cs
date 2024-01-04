@@ -51,6 +51,7 @@ public class PestControlSystem : MonoBehaviour
         CheckPestStart();
     }
 
+    // starts and spawn the timer bar for the event
     private void StartTimer()
     {
         if (selectedPlot != null)
@@ -65,6 +66,7 @@ public class PestControlSystem : MonoBehaviour
         }
     }
 
+    // select a random plot from the list
     private void SelectRandomPlot()
     {
         if (plottedLands.Count != 0)
@@ -75,11 +77,13 @@ public class PestControlSystem : MonoBehaviour
         }
     }
 
+    // retives all eligable plots from the scene
     private void getPlots()
     {
         plottedLands = GameObject.FindGameObjectsWithTag("Growing").ToList();
     }
 
+    // ensures that the event is fired based on the time that was set
     private void CheckPestStart()
     {
         if (timeManager.CurrentTime.TimeOfDay <= timeManager.PestSpawnTime.Add(TimeSpan.FromMinutes(1)) && timeManager.CurrentTime.TimeOfDay >= timeManager.PestSpawnTime)
@@ -99,6 +103,7 @@ public class PestControlSystem : MonoBehaviour
         }
     }
 
+    // stop the timer if the player exterminates the pests
     public void StopTimer()
     {
         if (id != null)
@@ -111,6 +116,7 @@ public class PestControlSystem : MonoBehaviour
         }
     }
 
+    // destroys the crops when the timer reachs the end
     private void DestroyPlot()
     {
         AudioSource.PlayClipAtPoint(witheredSound, this.gameObject.transform.position);

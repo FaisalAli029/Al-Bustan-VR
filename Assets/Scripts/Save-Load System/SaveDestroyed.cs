@@ -22,6 +22,7 @@ public class SaveDestroyed : MonoBehaviour
     {
         if (!Application.isPlaying) return;
 
+        // if conditions are meat, the GUID is stored in the local storage
         if (gameObject.scene.isLoaded && !isApplicationQuiting)
             ES3.Save(guid, true);
     }

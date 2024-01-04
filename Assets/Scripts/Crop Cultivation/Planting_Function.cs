@@ -17,6 +17,7 @@ public class PlantingFunction : MonoBehaviour
             // gettes the component that has the scriptable object related to the seed
             CropSeedCarrior carrior = collision.gameObject.GetComponent<CropSeedCarrior>();
 
+            // change the plot to a "growing" state
             transform.root.tag = "Growing";
 
             if (carrior != null && carrior.cropSeedData != null && carrior.cropSeedData.cropToPlant != null)
@@ -26,6 +27,7 @@ public class PlantingFunction : MonoBehaviour
                     // spawn the crops on each spawn point inside the parent of this game object
                     GameObject crop = Instantiate(carrior.cropSeedData.cropToPlant, spawn.transform.position, spawn.transform.rotation, transform);
 
+                    // ensure that crops scale is at intended size
                     crop.transform.localScale = carrior.cropSeedData.initCropScale;
                 }
             }
